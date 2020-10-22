@@ -1,0 +1,12 @@
+﻿  main.cpp
+D:\projects\Allocator\Allocator\main.cpp(20,1): warning C4267: =: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+D:\projects\Allocator\Allocator\main.cpp(40,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\projects\Allocator\Allocator\main.cpp(54,1): warning C4267: =: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+D:\projects\Allocator\Allocator\main.cpp(60,1): warning C4267: =: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+D:\projects\Allocator\Allocator\main.cpp(133,1): warning C4267: =: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+D:\projects\Allocator\Allocator\main.cpp(139,1): warning C4267: =: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+D:\projects\Allocator\Allocator\main.cpp(145,1): warning C4267: =: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+D:\projects\Allocator\Allocator\main.cpp(180,1): warning C4267: =: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+D:\projects\Allocator\Allocator\main.cpp(193,1): warning C4267: =: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+D:\projects\Allocator\Allocator\main.cpp(236,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Allocator.vcxproj -> D:\projects\Allocator\Debug\Allocator.exe
