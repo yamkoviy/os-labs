@@ -7,56 +7,51 @@
 ### **Initial code**
 
 
-    int[][] AD = new int[2][];
-    AD[0] = new int[2];
-    AD[1] = new int[2];
+    using System;
+    using System.Diagnostics;
 
-    int res = 0;
-
-    for (int j = 500000000; j > 0; j--)
+    namespace OSLab5
     {
-        AD[0][0]++;
-        AD[0][0]++;
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Stopwatch stopwatch = new Stopwatch();
+
+                stopwatch.Start();
+
+
+
+                int[,] a = new int[100, 100];
+                int res = 0;
+
+                for (int i = 0; i < 100; i++)
+                {
+                    for (int j = 0; j < 100; j++)
+                    {
+                        //a[j, i]++;
+                        a[i, j]++;
+                    }
+                }
+
+                stopwatch.Stop();
+
+                Console.WriteLine($"Number of ticks {stopwatch.ElapsedTicks}");
+            }
+
+        }
     }
 
-    AD[1][1] = AD[0][0];
 
-    Console.WriteLine(AD[0][0]);
-
+У прикладі наведеному вище ми обходимо матрицю по стовпцях, що погано, оскільки дані матриці зберігаються по рядках. Тобто ми спочатку зверталися до першого елемента кожного стовпця, потім до кожного другого, і тд. Помінявши місцями індекси, ми тепер обходимо матрицю по рядках.
 
 
-There is an array with arrays. In a loop, we increment the first element of the first array twice. I don't think this is an optimized option because there are two element and memory calls. To solve this problem, you need to add two units to the element at once
+## Result
 
+*Result of executing initial code*
 
+Кількість тактів (один такт = 427 нсек) - 5543
 
+*Result of executing optimized code*
 
-### **Optimized code**
-
-    int[][] AD = new int[2][];
-    AD[0] = new int[2];
-    AD[1] = new int[2];
-
-    int res = 0;
-
-    for (int j = 500000000; j > 0; j--)
-    {
-        AD[0][0] +=2;
-    }
-
-    AD[1][1] = AD[0][0];
-
-    Console.WriteLine(AD[0][0]);
-
-    
-
-## Examples
-
-*Picture 1. Result of executing initial code*
-
-![result-1](./img/result-1.png)
-
-*Picture 2. Result of executing optimized code*
-
-![result-2](./img/result-2.png)
-
-So we get the same results but different execution times. Code optimezed in 1.5 times by reducing access to elements and memory from two to one time.
+Кількість тактів (один такт = 427 нсек) - 4650
