@@ -6,4 +6,4 @@ It is a method for handling data structures where the first element is processed
 To better understand LIFO, imagine stacking a deck of cards by placing one card on top of the other, starting from the bottom. Once the deck has been fully stacked, you begin to remove the cards, starting from the top. This process is an example of the LIFO method, because the last cards to be placed on the deck are the first ones to be removed.
 ![Screenshot](screens/2.png)
 ## Graph
-![Screenshot](screens/graph.png)
+![Screenshot](screens/graph.jpg)
